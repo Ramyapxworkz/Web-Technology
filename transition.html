@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color:blue;
+            margin-left: 100px;
+            margin-top: 100px;
+            transition: width 2s,transform 2s, transform 4s;
+        }
+        div:hover{
+            width: 300px;
+            /* transform: rotate(3600deg); */
+
+
+        }
+        /* div:hover{
+            width: 300px; 
+            height: 300px;
+            transform: rotate(360deg);
+        } */
+
+        .div1{
+            transition-timing-function: linear;
+            transition-delay: linear;
+            /* background-color: bisque; */
+            /* transform: rotate(180deg); */
+        }
+        .div2{
+            transition-timing-function: ease;
+
+        }
+        .div3{
+             transition-timing-function: ease-in;
+        }
+        .div4{
+            transition-timing-function: ease-out;
+        }
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    
+</body>
+</html>

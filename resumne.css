@@ -1,0 +1,52 @@
+
+.name{
+    color: darkcyan;
+    margin-left: 0px;
+}
+.i{
+    position: absolute;
+    top: 10px;
+    padding-left: 100px;
+    right: 520px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+
+    /* margin-top: 300px; */
+} 
+.p{
+    height: 60px;
+    width: 250px;
+}
+.c{
+    background-color: aqua;
+    width: 700px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.p1{
+    height: 10px;
+    width: 700px;
+}
+table,td,th{
+    border: 1px solid;
+    width: 700px;
+    /* margin: center; */
+    
+}
+table{
+    border-collapse: collapse;
+}
+.ul{
+    list-style-type: circle;
+}
+dl{
+    width: 700px;
+}
+.signature{
+    margin-left: 600px;
+    margin-top:-70px;
+}

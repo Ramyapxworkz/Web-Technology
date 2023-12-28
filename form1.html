@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>X-workz</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+   body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+    }
+
+    h4 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #dc3545;
+    }
+
+    .design {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        height: 40px;
+    }
+
+    .form-check-input {
+        margin-top: 8px;
+    }
+
+    .btn-primary {
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #d72d2d;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+        color: #a6eaea;
+    }
+
+    .btn-secondary {
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #6c757d;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a685a;
+    }
+    .btn-primary:hover {
+        background-color: #00ff00;
+    }
+
+    label {
+        font-weight: bold;
+        color: #495057;
+    }
+  
+   
+</style>
+
+<body>
+
+	<div class="container">
+		<h4>User Details Form</h4>
+		<form action="info" class="r" method="post">
+
+			<div class="design">
+                <label for="fname">First Name</label>
+				<input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">			
+			</div>
+
+			<div class="design">
+                <label for="lname">Last Name</label>
+				<input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+			</div>
+
+			<div class="design">
+                <label for="mname">Middle Name</label>
+				<input type="text" class="form-control" id="mname" name="mname" placeholder="Middle Name">
+			</div>
+
+			<div class="mb-3">
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="gender" id="male" value="male">
+					<label class="form-check-label" for="male">Male</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="gender" id="female" value="female">
+					<label class="form-check-label" for="female">Female</label>
+				</div>
+			</div>
+
+			<div class="design">
+                <label for="address">Address</label>
+				<textarea class="form-control" id="address" name="address" placeholder="Address"></textarea>
+			</div>
+
+			<div class="design">
+                <label for="state">State</label>
+				<select class="form-select" name="state">
+					<option selected>Choose State</option>
+					<option>Maharashtra</option>
+					<option>Gujarat</option>
+					<option>Karnataka</option>
+					<option>Uttar Pradesh</option>
+                    <option>Andra Pradesh</option>
+				</select>
+			</div>
+
+			<div class="design">
+                <label for="taluk">Taluk</label>
+				<select class="form-select" name="taluk">
+					<option selected>Choose Taluk</option>
+					<option>Channagiri</option>
+					<option>Hubballi</option>
+					<option>Kundapur/option>
+                    <option>Ratnagiri</option>
+					<option>Thane</option>
+					<option>Andheri</option>
+                    <option>Akola</option>
+					<option>danpur</option>
+					<option>Tirupati</option>
+				</select>
+			</div>
+
+			<div class="design">
+                <label for="district">District</label>
+				<select class="form-select" name="district">
+					<option selected>Choose District</option>
+					<option>Davanagere</option>
+					<option>Hubballi</option>
+					<option>Udupi</option>
+                    <option>Pune</option>
+					<option>Mumbai</option>
+					<option>Kolhapur</option>
+                    <option>Agra</option>
+					<option>Lucknow</option>
+				</select>
+			</div>
+
+			<div class="design">
+                <label for="pincode">Pincode</label>
+				<input type="number" name="pincode" class="form-control" placeholder="Pincode">
+			</div>
+
+			<div class="design">
+                <label for="postname">Post Name</label>
+				<input type="text" name="postname" class="form-control" placeholder="Post Name">
+			</div>
+
+			<div class="design">
+				<input class="form-check-input" type="checkbox" id="confirm" name="confirm">
+				<label class="form-check-label" for="confirm">I confirm the submission</label>
+			</div>
+
+			<div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="reset" class="btn btn-secondary">Clear</button>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+
+</html>
