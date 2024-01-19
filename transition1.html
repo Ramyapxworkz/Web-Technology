@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            position: relative;
+            /* transition-delay: 2s; */
+            animation-name: animationName;
+            animation-duration: 2s;
+            animation-direction: 4s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes animationName {
+            0% {
+                background-color: black;
+                /* margin-left: 0px; */
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: chocolate;
+                left: 200px; top: 0px;
+                /* margin-left: 200px; */
+            }
+
+            50% {
+                background-color: blueviolet;
+                left: 200px; top:100px;
+             } 
+
+            75% {
+                background-color: crimson;
+                left: 200px; top: 200px;
+            }
+
+            100% {
+                background-color: cyan;
+                left: 0px; top: 200px;
+            }
+        }
+
+        /* div:hover{
+        width: 400px;
+       } */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
